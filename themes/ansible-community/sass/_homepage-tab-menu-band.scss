@@ -1,11 +1,17 @@
 .homepage-tab-menu-band {
   margin-top: 0;
+  margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 0;
   background-color: $grey94;
+
   display: grid;
   grid-template-columns: repeat(5 1fr);
   gap: 20px;
+
+  @media screen and (max-width: 768px) {
+  display: none;
+  }
 }
 
 .tab-menu-row {

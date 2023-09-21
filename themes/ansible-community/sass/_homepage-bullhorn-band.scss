@@ -1,5 +1,4 @@
 .homepage-bullhorn-band {
-  margin-top: 0;
   background-color: $pool;
   color: $black;
 }
@@ -58,5 +57,11 @@
       background-color: $white;
       color: $black;
     }
+  }
+}
+
+@media (max-width: 1170px) {
+  .bullhorn-content {
+    grid-template-columns: 1fr;
   }
 }

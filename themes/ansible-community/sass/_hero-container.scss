@@ -1,11 +1,20 @@
 .hero-container {
-  padding: 0 13rem;
   margin: 0 -13rem;
+  padding: 0 13rem;
   background-image: url(../images/unsplash.jpg);
   background-size: 100%;
   background-color: $pool;
   background-position: bottom;
   background-repeat: no-repeat;
+
+    @media screen and (max-width: 1170px) {
+    margin: 0 -6rem;
+    padding: 0 6rem;
+  }
+  @media screen and (max-width: 768px) {
+    margin: 0 -2rem;
+    padding: 0 2rem;
+  }
 
   .masthead {
     display: grid;

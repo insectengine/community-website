@@ -6,11 +6,16 @@
   display: flex;
   margin-top: 1rem;
   gap: 1rem;
+  flex-direction: row;
+
+  @media screen and (max-width: 768px) {
+  flex-direction: column;
+  }
 }
 
 .contribute-box-left {
-  display: flex;
-  flex-direction: column;
+  padding-right: 3rem;
+
   h3 {
     font-size: 1rem;
     font-weight: bold;
@@ -28,9 +33,13 @@
 }
 
 .contribute-box-right {
-  display: flex;
-  flex-direction: row;
+
   img {
-    margin-left: 7rem;
+    height: 172px;
+    width: auto;
+
+      @media screen and (max-width: 768px) {
+      padding-top: 1rem;
+    }
   }
 }

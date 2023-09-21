@@ -3,20 +3,28 @@
   position: relative;
   padding-top: 3rem;
   padding-bottom: 6rem;
-  margin-left: 10%;
-  margin-right: 10%;
   gap: 10px;
 }
 
 .banner-row {
   display: flex;
   flex-direction: row;
+
+  @media screen and (max-width: 1170px) {
+  flex-direction: column;
+  }
 }
 
 .banner-welcome-image {
 flex: 1;
   img {
-    margin-left: 125px;
+    min-width: 20rem;
+    max-width: 20rem;
+    padding-left: 4rem;
+
+    @media screen and (max-width: 1170px) {
+    padding-top: 2rem;
+    }
   }
 }
 
@@ -24,7 +32,7 @@ flex: 1;
   border-radius: 10px;
   background-color: $white;
   padding: 2rem;
-  flex: 1;
+  flex: 2;
   h2 {
     font-family: $redhat-display;
     font-size: 2rem;
